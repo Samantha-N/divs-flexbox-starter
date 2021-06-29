@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: #000;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -97,42 +97,92 @@ textarea {
 
 
 html {
-  background-color: rgb(224, 16, 155);
+  background-color: rgb(5, 0, 3);
   height: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: sans-serif;
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
 }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
+header,
+main {
   display: flex;
-  justify-content: space-around; 
-  align-items: flex-end;
-  font-weight: normal;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
 }
 
-.div-1, .div-2, .div-3 {
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap; 
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap; 
+    border-bottom: #fff solid;
+    color: #fff;
+    margin: 10px; 
+    padding-bottom: 3em;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+    font-size: 3em;
+}
+
+.span {
+    font-family: 'Sacramento'; 
+    font-size: 2.5em;
+}
+
+
+
+#div-1, #div-2, #div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   display: flex;
+  justify-content: space-between;
   align-items: center;  
   color: #fff;
   line-height: 1.5em;
   font-size: 1em;
-  background-color: #0d0e0f;
   height: 300px;
   width: 30%;
-  text-align: center;
-  border: rgb(8, 150, 245) solid;
+  padding: 0 1em 0 1em;   
 }
 
+#div-1, #div-2 {
+    border-right:#fff solid thin;
+    height: 200px;
+}
 
+footer {
+    display: flex;
+    justify-content: flex-start;  
+    align-items: flex-start;     
+    border-top: #fff solid;
+    color: white;  
+    padding-top: 2em;  
+}
 
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('https://use.fontawesome.com/releases/v5.0.6/css/all.css'); 
+    color: white;
+    font-weight: 400;
+    font-family: 'Font Awesome';
+    content: '\f099';
+}
 
+  
 /* ==========================================================================
    Helper classes
    ========================================================================== */
